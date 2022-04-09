@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+/*共通部分*/
+
+html {
+    font-size: 100%;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.7;
+    margin: auto;
+    width: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #6495ed;
+    border-bottom: 1px #ddd solid
+}
+
+p {
+    font-size: 28px;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1{
+    text-align: center;
+}
+/*HEADER*/
+
+.image{
+    background-image: url(images/haikei.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+/*contents*/
+.contents {
+            display: flex;
+            justify-content: space-between;
+            margin:0 auto;
+            width: 90%;
+            font-family: serif;
+            font-size: 17px;
+}
+
+article {
+        width: 80%;
+        padding: 10px;
+        order: 2;
+}
+
+aside {
+        width: 20%;
+        padding: 10px;
+        order: 1;
+}
+
+
+
+
+/*sub-menu*/
+
+.side-menu {
+    margin-bottom: 60px;
+    height: 100%;
+    width: 220px;
+     position: fixed;/*サイドメニュー固定*/
+     overflow: auto;
+     padding: 20px;
+   
+}
+
+.side-menu li {
+    border-bottom: 1px #ddd solid;
+}
+
+.side-menu a {
+    color: #432;
+    padding: 10px;
+    display: block;
+}
+
+.side-menu a:hover {
+    color: #0bd;
+}
+
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+  }
+  
+  #Audio-Control {
+    overflow: hidden;
+  }
+  
+  #Audio-Control button {
+    border: 1px solid #ccc;
+    width: 40px;
+    float: left;
+    padding: 5px 0;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+  }
+  
+  #Audio-Control button.on {
+    border-left: none;
+  }
+  
+  #Audio-Control button.off {
+    border-right: none;
+  }
+  
+  #Audio-Control button.active {
+    background: #ccc;
+  }
+  
+  #Audio-Control button:not(.active):hover {
+    background: rgba(204, 204, 204, 0.3);
+  }
+  
